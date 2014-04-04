@@ -1,0 +1,13 @@
+.DS_Store
+*.psd
+config.sh
+sftp-config.json
+bin
+gen
+libs
+obj
+assets
+proj.html5/lib
+proj.html5/src
+proj.html5/res
+nohup.out

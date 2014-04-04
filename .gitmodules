@@ -1,0 +1,3 @@
+[submodule "template/multi-platform-cqwrap/lib/cqwrap/js"]
+	path = template/multi-platform-cqwrap/lib/cqwrap/js
+	url = git@github.com:akira-cn/cqwrap.git
