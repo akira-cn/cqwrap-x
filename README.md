@@ -27,3 +27,7 @@ python create_project.py -project YourProject -package com.your.package -languag
 3. proj.android
 
   Open the build_native.sh file add NDK_ROOT="$HOME/your/path/to/ndk" then you can run it on ADT or android studio.
+
+## Docs
+
+[http://cqwrap.weizoo.com/wiki]
