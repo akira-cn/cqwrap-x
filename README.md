@@ -30,4 +30,4 @@ python create_project.py -project YourProject -package com.your.package -languag
 
 ## Docs
 
-[http://cqwrap.weizoo.com/wiki]
+http://cqwrap.weizoo.com/wiki
