@@ -89,14 +89,20 @@ void handle_signal(int signal) {
 void AppDelegate::applicationDidEnterBackground()
 {
     CCDirector::sharedDirector()->stopAnimation();
+//#if(CC_TARGET_PLATFORM != CC_PLATFORM_IOS)
     SimpleAudioEngine::sharedEngine()->pauseBackgroundMusic();
+//#endif
     SimpleAudioEngine::sharedEngine()->pauseAllEffects();
+    ScriptingCore::getInstance()->evalString("director.emit('appDidEnterBackground')", NULL);
 }
 
 // this function will be called when the app is active again
 void AppDelegate::applicationWillEnterForeground()
 {
     CCDirector::sharedDirector()->startAnimation();
+#if(CC_TARGET_PLATFORM != CC_PLATFORM_IOS)
     SimpleAudioEngine::sharedEngine()->resumeBackgroundMusic();
+#endif
     SimpleAudioEngine::sharedEngine()->resumeAllEffects();
+    ScriptingCore::getInstance()->evalString("director.emit('appWillEnterForeground')", NULL);
 }

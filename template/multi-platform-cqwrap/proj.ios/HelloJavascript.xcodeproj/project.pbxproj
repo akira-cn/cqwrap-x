@@ -231,6 +231,8 @@
 		3F320A4B18E948F60044D661 /* md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F320A1318E948F60044D661 /* md5.cpp */; };
 		3F320A4C18E948F60044D661 /* MessageDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F320A1518E948F60044D661 /* MessageDelegate.cpp */; };
 		3F320A4D18E948F60044D661 /* NativeAdapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F320A1718E948F60044D661 /* NativeAdapter.cpp */; };
+		3FDAFB96193342EF00A1FD3A /* ResUpdater.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAFB94193342EF00A1FD3A /* ResUpdater.cpp */; };
+		3FDAFB9B1933435B00A1FD3A /* AssetsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAFB991933435B00A1FD3A /* AssetsManager.cpp */; };
 		46513EB6187C02A600B5ABE1 /* UITouchGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46513EB4187C02A600B5ABE1 /* UITouchGroup.cpp */; };
 		46513EB8187C034200B5ABE1 /* index.js in Sources */ = {isa = PBXBuildFile; fileRef = 46513EB7187C034200B5ABE1 /* index.js */; };
 		46513EB9187C03D300B5ABE1 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 46513EB7187C034200B5ABE1 /* index.js */; };
@@ -711,6 +713,10 @@
 		3F320A1618E948F60044D661 /* MessageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDelegate.h; sourceTree = "<group>"; };
 		3F320A1718E948F60044D661 /* NativeAdapter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NativeAdapter.cpp; sourceTree = "<group>"; };
 		3F320A1818E948F60044D661 /* NativeAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeAdapter.h; sourceTree = "<group>"; };
+		3FDAFB94193342EF00A1FD3A /* ResUpdater.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResUpdater.cpp; sourceTree = "<group>"; };
+		3FDAFB95193342EF00A1FD3A /* ResUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResUpdater.h; sourceTree = "<group>"; };
+		3FDAFB991933435B00A1FD3A /* AssetsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AssetsManager.cpp; sourceTree = "<group>"; };
+		3FDAFB9A1933435B00A1FD3A /* AssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsManager.h; sourceTree = "<group>"; };
 		46513EB4187C02A600B5ABE1 /* UITouchGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UITouchGroup.cpp; sourceTree = "<group>"; };
 		46513EB5187C02A600B5ABE1 /* UITouchGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITouchGroup.h; sourceTree = "<group>"; };
 		46513EB7187C034200B5ABE1 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = index.js; path = ../Resources/index.js; sourceTree = "<group>"; };
@@ -1023,6 +1029,7 @@
 		15A3D4A91682F1A4002FB0C5 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3FDAFB981933435B00A1FD3A /* AssetsManager */,
 				1A5E740117F0874400B9ACAE /* CocoStudio */,
 				15A3D4AB1682F1A4002FB0C5 /* CCBReader */,
 				15A3D4E01682F1A4002FB0C5 /* cocos-ext.h */,
@@ -1655,6 +1662,8 @@
 				3F320A1618E948F60044D661 /* MessageDelegate.h */,
 				3F320A1718E948F60044D661 /* NativeAdapter.cpp */,
 				3F320A1818E948F60044D661 /* NativeAdapter.h */,
+				3FDAFB94193342EF00A1FD3A /* ResUpdater.cpp */,
+				3FDAFB95193342EF00A1FD3A /* ResUpdater.h */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -1668,6 +1677,15 @@
 				3F320A1218E948F60044D661 /* OpenUDID.m */,
 			);
 			path = ios;
+			sourceTree = "<group>";
+		};
+		3FDAFB981933435B00A1FD3A /* AssetsManager */ = {
+			isa = PBXGroup;
+			children = (
+				3FDAFB991933435B00A1FD3A /* AssetsManager.cpp */,
+				3FDAFB9A1933435B00A1FD3A /* AssetsManager.h */,
+			);
+			path = AssetsManager;
 			sourceTree = "<group>";
 		};
 		A92275321517C094001B78AA = {
@@ -1871,6 +1889,7 @@
 				15A3D3991682F0B6002FB0C5 /* cpArbiter.c in Sources */,
 				15A3D39A1682F0B6002FB0C5 /* cpArray.c in Sources */,
 				15A3D39B1682F0B6002FB0C5 /* cpBB.c in Sources */,
+				3FDAFB9B1933435B00A1FD3A /* AssetsManager.cpp in Sources */,
 				15A3D39C1682F0B6002FB0C5 /* cpBBTree.c in Sources */,
 				15A3D39D1682F0B6002FB0C5 /* cpBody.c in Sources */,
 				15A3D39E1682F0B6002FB0C5 /* cpCollision.c in Sources */,
@@ -1997,6 +2016,7 @@
 				1A96A4F1174A3369008653A9 /* HttpClient.cpp in Sources */,
 				1AB87010175E0759005D39BF /* CCSkeleton.cpp in Sources */,
 				1AB87011175E0759005D39BF /* CCSkeletonAnimation.cpp in Sources */,
+				3FDAFB96193342EF00A1FD3A /* ResUpdater.cpp in Sources */,
 				375BD524186845B00024609E /* CCActionFrame.cpp in Sources */,
 				1AB87014175E0768005D39BF /* WebSocket.cpp in Sources */,
 				1AB87017175E0773005D39BF /* jsb_websocket.cpp in Sources */,
