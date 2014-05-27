@@ -51,7 +51,27 @@ define(function(require, exports, module){
             ];
             drawNode.drawPoly(star, cc.c4f(1,0,0,0.5), 1, cc.c4f(0,0,1,1) );
 
+            //drawNode.drawDot(cc.p(o, o), 100, cc.c4f( Math.random(), Math.random(), Math.random(), 1));
+            //drawNode.setStyle('scaleY', 0.8);
+            
             this.addChild(drawNode);
+
+            var cache = cc.SpriteFrameCache.getInstance();
+            cache.addSpriteFrames("res/img/birds.plist", "res/img/birds.png");
+
+            var bird = cc.createSprite('res/img/bird1.png', {
+                xy: [300, 400]
+            });
+            bird.animate(0.5, 'res/img/bird1.png', 'res/img/bird2.png', 'res/img/bird3.png')
+                .repeat().act();
+
+            /*var bird = cc.createSprite('bird1.png', {
+                xy: [300, 400]
+            });
+
+            bird.animate(0.5, 'bird1.png', 'bird2.png', 'bird3.png').repeat().act();*/
+
+            this.addChild(bird);
         }
     });
 
